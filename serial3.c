@@ -11,9 +11,9 @@ void loop()
   if (Serial.available() > 0) {
     int incomingByte = Serial.read();
 
-    if (incomingByte == 0x01) {
+    if (incomingByte == 0x31) {
       digitalWrite(outputPin, HIGH);
-    } else if (incomingByte == 0x00) {
+    } else if (incomingByte == 0x30) {
       digitalWrite(outputPin, LOW);
     }
   }
