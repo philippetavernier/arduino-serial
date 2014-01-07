@@ -1,4 +1,5 @@
-//  BASH
+//  SHELL
+// verify the baudrate with ssty -F /dev/ttyUSB0
 //      sudo echo -n "0" > /dev/ttyUSB0
 //      sudo echo -n "1" > /dev/ttyUSB0
 //
