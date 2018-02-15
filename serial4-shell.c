@@ -19,11 +19,11 @@ void loop()
   if (Serial.available() > 0) {
     int incomingByte = Serial.read();
     Serial.println(incomingByte, DEC);
-   // if (incomingByte == 49) {
-    if (incomingByte == '1') {
+      if (incomingByte == 49) {
+    //if (incomingByte == '1') {
       digitalWrite(outputPin, HIGH);
-    // if (incomingByte == 49) {
-    } else if (incomingByte == '0') {
+    // if (incomingByte == 0) {
+    } else if (incomingByte == '48') {
       digitalWrite(outputPin, LOW);
     }
   }
